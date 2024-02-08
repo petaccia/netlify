@@ -1,0 +1,24 @@
+// Variables de couleurs
+$primary-color: #3498db; // Bleu
+$secondary-color: #2ecc71; // Vert
+$background-color: #2c3e50; // Fond foncé
+$text-color: #ecf0f1; // Texte clair
+$hover-color: #090909;
+
+// Police
+$font-family: 'Source Code Pro', monospace;
+
+// Taille de la police
+$font-size: 16px;
+
+:root {
+  --font-family: "Muli", sans-serif;
+  --light: #038063;
+  --secondary: #f1c40f;
+  --primary: #034a62;
+  --dark: #0630da;
+  --text: #333;
+  --background: #fafafa;
+  --hint: #999;
+  --border: #ddd;
+}
