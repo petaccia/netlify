@@ -27,22 +27,41 @@ $dark-color: var(--dark);
 
   @include mediaQueries.lg {
     grid:
-      "header" auto "main" auto "picture" auto "aside" auto;
+      "header" auto
+      "picture" auto
+       "main" auto
+       "aside" auto
+      ;
+
   }
 
   @include mediaQueries.md {
     grid:
-      "header" auto "main" auto "picture" auto "aside" auto;
+      "header" auto
+      "picture" auto
+
+       "main" auto
+       "aside" auto
+      ;
+
   }
 
   @include mediaQueries.sm {
     grid:
-      "header" auto "main" auto "picture" auto "aside" auto;
+      "header" auto
+      "picture" auto
+       "main" auto
+       "aside" auto
+      ;
+
   }
 
   @include mediaQueries.xs {
     grid:
-      "header" auto "main" auto "picture" auto "aside" auto;
+      "header" auto 
+      "picture" auto 
+      "main" auto 
+      "aside" auto;
   }
 }
 
@@ -207,7 +226,7 @@ header {
     }
 
     @include mediaQueries.xs {
-      width: 80%;
+      width: 30%;
     }
   }
 }

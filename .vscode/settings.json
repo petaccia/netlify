@@ -1,0 +1,4 @@
+{
+  "cody.autocomplete.formatOnAccept": false,
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
+}
