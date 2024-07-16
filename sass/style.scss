@@ -702,6 +702,16 @@ main {
     }
   }
 
+  .content-certification {
+    width: 100%;
+    padding: 2rem;
+    
+
+   
+    .experience-certification{
+      text-align: center;
+    }
+  }
   .experience {
     display: flex;
     margin: 6rem 0;
@@ -717,6 +727,7 @@ main {
     .experience-card {
       padding: 2rem;
       border-right: 1px solid $border-color;
+      width: 150px;
 
       @include mediaQueries.md {
         border-right: none;
@@ -858,17 +869,11 @@ main {
           }
 
 
-          .logo-externatic {
-            width: 100px;
-          }
 
           .logo-dragon {
             width: 120px;
           }
 
-          .logo-family {
-            width: 80px;
-          }
         }
       }
     }

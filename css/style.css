@@ -748,6 +748,13 @@ main .experience-title {
     letter-spacing: 0.5rem;
   }
 }
+main .content-certification {
+  width: 100%;
+  padding: 2rem;
+}
+main .content-certification .experience-certification {
+  text-align: center;
+}
 main .experience {
   display: flex;
   margin: 6rem 0;
@@ -765,6 +772,7 @@ main .experience {
 main .experience .experience-card {
   padding: 2rem;
   border-right: 1px solid var(--border);
+  width: 150px;
 }
 @media (max-width: 992px) {
   main .experience .experience-card {
@@ -906,14 +914,8 @@ main .experience .content .experience-content a .span-dragon {
     margin-bottom: 1rem;
   }
 }
-main .experience .content .experience-content a .logo-externatic {
-  width: 100px;
-}
 main .experience .content .experience-content a .logo-dragon {
   width: 120px;
-}
-main .experience .content .experience-content a .logo-family {
-  width: 80px;
 }
 
 /*# sourceMappingURL=style.css.map */
