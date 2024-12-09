@@ -4,7 +4,7 @@
 main {
   grid-area: main;
   padding: $spacing-xl;
-  margin-top : $spacing-xl;
+  margin-top: $spacing-xl;
   width: 100%;
   text-align: justify;
   z-index: 1;
@@ -48,24 +48,34 @@ main {
     .card-body {
       padding: $spacing-md;
 
-      .desc {
-        margin-bottom: $spacing-md;
-        h4 {
-          color: $dark-color;
-          font-size: $font-size-sm;
-          margin-bottom: $spacing-sm;
-        }
+      h4 {
+        color: $dark-color;
+        font-size: $font-size-sm;
+        margin-bottom: $spacing-sm;
+      }
+      .cert-list {
+        width: 300px;
+        height: 300px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-between;
+        
+        
 
-        p {
+        a {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
           line-height: 1.5;
           letter-spacing: 1px;
           font-size: $font-size-xs;
-          margin-bottom: $spacing-sm;
         }
       }
       .card-main {
         width: 100%;
-        display: flex;        
+        display: flex;
         margin-bottom: $spacing-md;
       }
 
@@ -84,32 +94,30 @@ main {
         }
       }
     }
+  }
 
-    .card-footer {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: $spacing-md;
-      border-top: 1px solid $border-color;
+  .card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: $spacing-md;
+    border-top: 1px solid $border-color;
 
-      a {
-        color: $primary-color;
-        text-decoration: none;
-        font-size: $font-size-sm;
-        margin-right: $spacing-md;
+    a {
+      color: $primary-color;
+      text-decoration: none;
+      font-size: $font-size-sm;
+      margin-right: $spacing-md;
 
-        i,
-        img {
-          width: $spacing-xs;
-          margin-right: $spacing-xs;
-        }
+      i,
+      img {
+        width: $spacing-xs;
+        margin-right: $spacing-xs;
+      }
 
-        &:hover {
-          text-decoration: underline;
-        }
+      &:hover {
+        text-decoration: underline;
       }
     }
   }
 }
-
-
