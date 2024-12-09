@@ -1,310 +1,599 @@
 <!DOCTYPE html>
 <html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Configuration responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link href="https://fonts.googleapis.com/css?family=Muli:300,400,700&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/97bb762bba.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="css/variables.css">
-  <link rel="stylesheet" href="css/style.css">
-  <title>CV - Petaccia Sébastien</title>
-</head>
+    <!-- SEO -->
+    <meta name="author" content="Sébastien Petaccia" />
+    <meta
+      name="description"
+      content="CV en ligne de Sébastien Petaccia - Développeur Web Full Stack"
+    />
+    <meta
+      name="keywords"
+      content="CV, Sébastien Petaccia, Développeur Web, Web Mobile, Développeur Full Stack"
+    />
 
-<body>
-  <!-- container Général -->
-  <div class="grid-container">
+    <!-- Polices Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css?family=Muli:300,400,700&display=swap"
+      rel="stylesheet"
+    />
 
-    <!-- En-tête et photo de profil de l'auteur -->
-    <header>
-      <h1>Sébastien Petaccia</h1>
-      <p class="job-title">Développeur Web / Web Mobile</p>
-      <p class="job-title">CDI</p>
-    </header>
-    <section class="picture">
-      <img src="img/seb.jpg" class="seb" alt="photo">
-    </section>
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/97bb762bba.js"
+      crossorigin="anonymous"
+    ></script>
 
-    <!-- Sidebar de gauche contenant les coordonnées -->
-    <aside class="aside">
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
 
-      <!-- Contact -->
-      <div class="contact-container">
-        <h2 class="contact-title">CONTACT</h2>
-        <div class="contact">
-          <h3>
-            <i class="fas fa-phone"></i>
-            <a class="h3" href="tel:+33638194752" target="_blank">06 38 19 47 52</a>
-          </h3>
-        </div>
-        <div class="contact">
-          <h3>
-            <i class="fas fa-envelope"></i>
-            <a class="h3" href="mailto:petaccia.seb.dev@gmail.com" target="_blank">petaccia.seb.dev@gmail.com</a>
-          </h3>
-        </div>
-        <div class="contact">
-          <h3 class="contact-title-adress">
-            <i class="fas fa-map-marker-alt"></i>
-            <span class="h3">10 rue Georges Bréant 28410 Broué </span>
-          </h3>
-        </div>
-      </div>
+    <title>CV - Petaccia Sébastien | Développeur Web Full Stack</title>
+  </head>
 
+  <body>
+    <!-- Container principal -->
+    <div class="grid-container">
+      <!-- En-tête -->
+      <header>
+        <h1>Sébastien Petaccia</h1>
+        <p class="job-title">Développeur Web / Web Mobile</p>
+        <p class="job-title">CDI</p>
+      </header>
 
-      <!-- Compétences -->
-      <div class="competence">
-        <h2 class="contact-title">COMPÉTENCES</h2>
-        <div class="logo">
+      <!-- Photo de profil -->
+      <section class="picture">
+        <img src="img/seb.jpg" class="seb" alt="Photo de Sébastien Petaccia" />
+      </section>
 
-          <!-- Logos des compétences techniques frontend -->
-          <h4 class="logo-title">Frontend</h4>
-          <ul class="logo-list">
-            <li class="logo-front">HTML <i class="fab fa-html5" style="color: red"></i></li>
-            <li class="logo-front">CSS <i class="fab fa-css3-alt" style="color: blue"></i></li>
-            <li class="logo-front">Scss <i class="fab fa-sass sass" style="color: palevioletred "></i></li>
-            <li class="logo-front">JavaScript <i class="fab fa-js-square" style="color: #f0db4f"></i></li>
-            <li class="logo-front">React js <i class="fab fa-react" style="color: #61dafb"></i></li>
-          </ul>
-        </div>
-
-        <!-- Logos des compétences techniques backend -->
-        <div class="logo">
-          <h4 class="logo-title">Backend</h4>
-          <ul class="logo-list">
-            <li class="logo-back">Node js <i class="fab fa-node-js" style="color: #3c873a"></i></li>
-            <li class="logo-back">MongoDB <img src="img/icon/icons8-mongodb.svg" alt="icon mongodb"></li>
-            <li class="logo-back">MySQL <img src="img/icon/icons8-mysql.svg" alt="icon mysql"></li>
-          </ul>
-        </div>
-
-        <!-- Logos des compétences Hardskills -->
-        <div class="logo">
-          <h4 class="logo-title">Software</h4>
-          <ul class="logo-list">
-            <li class="soft">Vs code <img src="img/icon/vsCode.svg" alt="icon vscode"></li>
-            <li class="soft">Git <i class="fab fa-git-alt" style="color: #f05032"></i></li>
-            <li class="soft">GitHub <i class="fab fa-github" style="color: #333"></i></li>
-            <li class="soft">Figma <i class="fab fa-figma" style="color: #f24e1e"></i></li>
-          </ul>
-        </div>
-
-        <!-- Logos des compétences SoftSkills -->
-        <div class="logo">
-          <h4 class="logo-title">Soft-Kills</h4>
-          <ul class="logo-list">
-            <li class="skills">Autodidacte</li>
-            <li class="skills">Travail en équipe</li>
-            <li class="skills">Curieux</li>
-          </ul>
+      <!-- Barre latérale -->
+      <aside class="aside">
+        <!-- Section contact -->
+        <div class="card-container">
+          <h2 class="contact-title">CONTACT</h2>
+          <div class="contact">
+            <h3>
+              <i class="fas fa-phone"></i>
+              <a
+                class="h3"
+                href="tel:+33638194752"
+                target="_blank"
+                rel="noopener noreferrer"
+                >06 38 19 47 52</a
+              >
+            </h3>
+          </div>
+          <div class="contact">
+            <h3>
+              <i class="fas fa-envelope"></i>
+              <a
+                class="h3"
+                href="mailto:petaccia.seb.dev@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                >petaccia.seb.dev@gmail.com</a
+              >
+            </h3>
+          </div>
+          <div class="contact">
+            <h3 class="contact-title-adress">
+              <i class="fas fa-map-marker-alt"></i>
+              <span class="address">10 rue Georges Bréant 28410 Broué</span>
+            </h3>
+          </div>
         </div>
 
-        <!-- Logos des compétences Langues -->
-        <div class="logo">
-          <h4 class="logo-title">Langues</h4>
-          <ul class="logo-list">
-            <li class="logo-lang">Anglais <p>Technique</p>
-            </li>
-            <li class="logo-lang">Français <p>Langue maternelle</p>
-            </li>
-          </ul>
+        <!-- Section compétences -->
+        <div class="competence">
+          <div class="card-container">
+            <h4 class="logo-title">Environnement</h4>
+            <ul class="logo-list">
+              <li class="soft">Linux <i class="fab fa-linux"></i></li>
+              <li class="soft">Windows <i class="fab fa-windows"></i></li>
+            </ul>
+          </div>
+
+          <div class="card-container">
+            <h4 class="logo-title">Méthodologies</h4>
+            <ul class="logo-list">
+              <li class="skills">Agile/Scrum</li>
+              <li class="skills">Clean Code</li>
+            </ul>
+          </div>
+
+          <div class="card-container">
+            <h4 class="logo-title">Outils de développement</h4>
+            <ul class="logo-list">
+              <li class="soft">Terminal <i class="fas fa-terminal"></i></li>
+              <li class="soft">NPM ou PNPM <i class="fab fa-npm"></i></li>
+              <li class="soft">
+                Postman<img
+                  src="img/icon/softs/postman.png"
+                  alt="Logo Postman"
+                />
+              </li>
+            </ul>
+          </div>
+
+          <!-- Technologies Frontend -->
+          <div class="card-container">
+            <h4 class="logo-title">Frontend</h4>
+            <ul class="logo-list">
+              <!-- Développement -->
+              <li class="logo-front">
+                HTML <i class="logoHtml fab fa-html5"></i>
+              </li>
+              <li class="logo-front">
+                JavaScript <i class="logoJs fab fa-js-square"></i>
+              </li>
+              <li class="logo-front">
+                React.js <i class="logoReact fab fa-react"></i>
+              </li>
+              <li class="logo-front">
+                Next.js
+                <img src="img/icon/frontend/nextJs.svg" alt="Logo Next.js" />
+              </li>
+            </ul>
+          </div>
+
+          <!-- Styles et Framework -->
+          <div class="card-container">
+            <h4 class="logo-title">Styles</h4>
+            <ul class="logo-list">
+              <li class="logo-front">
+                CSS <i class="logoCss fab fa-css3-alt"></i>
+              </li>
+              <li class="logo-front">
+                SCSS <i class="logoScss fab fa-sass sass"></i>
+              </li>
+              <li class="logo-front">
+                Tailwind CSS
+                <img
+                  src="img/icon/styles/tailwind.svg"
+                  alt="Logo Tailwind CSS"
+                />
+              </li>
+              <li class="logo-front">
+                Bootstrap <i class="fab fa-bootstrap"></i>
+              </li>
+            </ul>
+          </div>
+
+          <!-- design -->
+          <div class="card-container">
+            <h4 class="logo-title">Design</h4>
+            <ul class="logo-list">
+              <li class="logo-front">
+                Figma <i class="iconFigma fab fa-figma" alt="Logo Figma"></i>
+              </li>
+              <li class="logo-front">
+                Lunacy
+                <img src="img/icon/design/lunacy.png" alt="Logo Lunacy" />
+              </li>
+            </ul>
+          </div>
+          <!-- Backend -->
+          <div class="card-container">
+            <h4 class="logo-title">Backend</h4>
+            <ul class="logo-list">
+              <li class="logo-back">
+                Node js <i class="logoNodeJs fab fa-node-js"></i>
+              </li>
+              <li class="logo-back">
+                MongoDB
+                <img
+                  src="img/icon/backend/icons8-mongodb.svg"
+                  alt="Logo MongoDB"
+                />
+              </li>
+              <li class="logo-back">
+                MySQL
+                <img src="img/icon/backend/icons8-mysql.svg" alt="Logo MySQL" />
+              </li>
+              <li class="logo-back">
+                PostgreSQL
+                <img
+                  src="img/icon/backend/icons8-postgresql.svg"
+                  alt="Logo PostgreSQL"
+                />
+              </li>
+            </ul>
+          </div>
+
+          <!-- Software -->
+          <div class="card-container">
+            <h4 class="logo-title">Software</h4>
+            <ul class="logo-list">
+              <li class="soft">
+                WebStorm
+                <img
+                  src="img/icon/softs/icons8-webstorm.svg"
+                  alt="Logo WebStorm"
+                />
+              </li>
+              <li class="soft">
+                Vs code
+                <img src="img/icon/softs/vsCode.svg" alt="Logo VS Code" />
+              </li>
+              <li class="soft">Git <i class="iconGit fab fa-git-alt"></i></li>
+              <li class="soft">
+                GitHub <i class="iconGitHub fab fa-github"></i>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Soft Skills -->
+          <div class="card-container">
+            <h4 class="logo-title">Soft-Skills</h4>
+            <ul class="logo-list">
+              <li class="skills">Autodidacte</li>
+              <li class="skills">Travail en équipe</li>
+              <li class="skills">Curieux</li>
+            </ul>
+          </div>
+
+          <!-- Langues -->
+          <div class="card-container">
+            <h4 class="logo-title">Langues</h4>
+            <ul class="logo-list">
+              <li class="logo-lang">
+                Anglais
+                <p>Niveau B2</p>
+              </li>
+              <li class="logo-lang">
+                Français
+                <p>Langue maternelle</p>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Réseaux sociaux -->
+          <div class="card-container">
+            <h4 class="logo-title">Social</h4>
+            <ul class="logo-list">
+              <li class="social-link">
+                <a
+                  class="a-social"
+                  href="https://www.linkedin.com/in/petaccia"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="iconLinkedin fab fa-linkedin i-social"></i> Linkedin
+                </a>
+              </li>
+              <li class="social-link">
+                <a
+                  class="a-social"
+                  href="https://github.com/petaccia"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fab fa-github i-social"></i> Github
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
 
-        <!-- Container de liens sociaux -->
-        <div class="social">
-          <h4 class="logo-title">Social</h4>
+        <!-- Loisirs -->
+        <div class="card-container">
+          <h4 class="logo-title">Loisirs</h4>
           <ul>
-            <li class="social-link">
-              <a class="a-social" href="https://www.linkedin.com/in/petaccia" target="_blank">
-                <i class="fab fa-linkedin i-social" style="color: #0077b5"></i> Linkedin
-              </a>
-            </li>
-            <li class="social-link">
-              <a class="a-social" href="https://github.com/petaccia" target="_blank">
-                <i class="fab fa-github i-social" style="color: #333"></i> Github
-              </a>
-            </li>
+            <li>Football (entraineur des enfants de 8 ans)</li>
+            <li>Informatique</li>
+            <li>Musique</li>
+            <li>Bricolage</li>
+            <li>Jardinage</li>
           </ul>
         </div>
-      </div>
+      </aside>
 
-      <!-- Loisirs -->
-      <div class="loisirs">
-        <h4 class="logo-title">Loisirs</h4>
-        <ul>
-          <li>Football (entraineur des enfants de 8 ans)</li>
-          <li>Informatique</li>
-          <li>Musique</li>
-          <li>Bricolage</li>
-          <li>Jardinage</li>
-        </ul>
-      </div>
-    </aside>
+      <!-- Contenu principal -->
+      <main>
+        <div>
+          <!-- À propos -->
+          <h3 class="about-title">À propos</h3>
+          <p>
+            Il y a un an, j’ai obtenu mon diplôme en développement web Full
+            Stack à la Wild Code School, une formation intense où j’ai acquis
+            des compétences solides dans la conception et le développement
+            d’applications web modernes. Depuis, je n’ai cessé de coder,
+            d’explorer de nouvelles technologies et de perfectionner mes
+            compétences techniques et méthodologiques. Même si je n’ai pas
+            encore finalisé un projet complet, j’ai travaillé sur plusieurs
+            initiatives personnelles qui m’ont permis de renforcer mes
+            connaissances, d’améliorer ma maîtrise des frameworks comme React.js
+            et Next.js, et de développer des solutions alignées avec les
+            meilleures pratiques du secteur. Aujourd’hui, fort de cette
+            expérience et d’une curiosité insatiable pour le développement web,
+            je me sens prêt à m’investir pleinement dans des projets concrets au
+            sein d’une équipe. Mon objectif est d’apporter ma rigueur, ma
+            créativité et ma capacité à apprendre rapidement pour contribuer à
+            la réussite collective tout en continuant à évoluer
+            professionnellement.
+          </p>
 
-    <!-- Corps de la page contenant les informations du CV -->
-    <main>
-
-      <!-- Container de l'expérience professionnelle  -->
-      <div>
-        <h3 class="about-title">A propos</h3>
-        <p>
-          Après une reconversion professionnelle réussie, je suis fier d'annoncer l'obtention de mon diplôme en
-          développement web Full Stack de la Wild Code School. Ayant acquis une gamme de compétences techniques et
-          pratiques, je suis activement à la recherche de rôles dans des projets à la fois innovants et stimulants. Mon
-          parcours unique combine à la fois une nouvelle expertise technique et une passion renouvelée pour la
-          technologie, faisant de moi un candidat idéal pour des équipes dynamiques et avant-gardistes.
-        </p>
-
-        <h3 class="experience-title">Expérience professionnelle</h3>
-
-        <!-- Dernière experience -->
-        <div class="experience">
-          <div class="experience-card">
-            <h4><i class="fas fa-graduation-cap"></i> DYMA</h4>
-            <p>20/01/2024 - <br>En cours</p>
-          </div>
-          <div class="content">
-            <div class="experience-content">
-              <h3>Certifications</h3>
-              <ul class="experience-list">
-                <li class="experience-item">
-                  <a class="a" href="https://dyma.fr/certification/659442dc69cb83d383f83f39/5dab7f032482b13eb493df12" target="_blank" rel="noopener">
+          <!-- Expériences professionnelles -->
+          <h3 class="experience-title">Expérience professionnelle</h3>
+          <!-- DYMA -->
+          <div class="experience-container">
+            <div class="experience-card">
+              <div class="card-header">
+                <h3>DYMA</h3>
+                <p>20/01/2024 - En cours</p>
+              </div>
+              <div class="card-body">
+                <h4>Certifications</h4>
+                <ul>
+                  <li>
                     HTML
-                    <button class="btn" type="button">Voir</button>
-                  </a>
-                </li>
-                <li class="experience-item">
-                  <a class="a" href="https://dyma.fr/certification/659442dc69cb83d383f83f39/5dab7f032482b13eb493df12" target="_blank" rel="noopener">
+                    <button type="button" class="btn btn-primary">
+                      Voir certification
+                    </button>
+                  </li>
+                  <li>
                     CSS
-                    <button class="btn" type="button">Voir</button>
-                  </a>
-                </li>
-                <li class="experience-item">
-                  <a class="a" href="https://dyma.fr/certification/659442dc69cb83d383f83f39/5de1a78332cf6b3128beee34" target="_blank" rel="noopener">
+                    <button type="button" class="btn btn-primary">
+                      Voir certification
+                    </button>
+                  </li>
+                  <li>
                     JavaScript
-                    <button class="btn" type="button">Voir</button>
-                  </a>
-                </li>
-                <li class="experience-item">
-                  <a class="a" href="https://dyma.fr/certification/659442dc69cb83d383f83f39/5de1a7854b2e6811e407d097" target="_blank" rel="noopener">
+                    <button type="button" class="btn btn-primary">
+                      Voir certification
+                    </button>
+                  </li>
+                  <li>
                     React JS
-                    <button class="btn" type="button">Voir</button>
-                  </a>
-                </li>
-              </ul>
+                    <button type="button" vc class="btn btn-primary">
+                      Voir certification
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- FamilyCircle -->
+          <div class="experience-card">
+            <div class="card-header">
+              <h3>Wild Code School - FamilyCircle</h3>
+              <p>06/2023 - 11/2023</p>
+            </div>
+            <div class="card-body">
+              <!-- Description -->
+              <section class="desc">
+                <h4>Description du projet</h4>
+                <p>
+                  FamilyCircle est une application web qui permet aux
+                  utilisateurs de partager des moments de plaisir ensemble, de
+                  jouer ensemble et de se souvenir dans une communauté virtuelle
+                  de famille.
+                </p>
+              </section>
+
+              <div class="card-main">
+                <!-- Rôles -->
+                <section class="roles">
+                  <h4>Rôles</h4>
+                  <ul class="roles-list">
+                    <li>Front-end</li>
+                    <li>Back-end</li>
+                    <li>Design</li>
+                  </ul>
+                </section>
+
+                <!-- Technologies -->
+                <section class="techno">
+                  <h4>Technologies utilisées</h4>
+                  <ul class="techno-list">
+                    <li>React.js</li>
+                    <li>Node.js</li>
+                    <li>Sequelize</li>
+                    <li>MySQL</li>
+                    <li>Express.js</li>
+                    <li>Tailwind CSS</li>
+                    <li>Figma</li>
+                  </ul>
+                </section>
+
+                <section class="acquis">
+                  <h4>Compétences acquises</h4>
+                  <ul class="acquis-list">
+                    <li>Architecture MVC</li>
+                    <li>Authentification JWT</li>
+                    <li>API RESTful</li>
+                    <li>Base de données relationnelle</li>
+                    <li>Gestion d'état avec Redux</li>
+                    <li>Déploiement full stack</li>
+                  </ul>
+                </section>
+              </div>
+            </div>
+            <div class="card-footer">
+              <a
+                href="https://github.com/petaccia"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fab fa-github"></i> FamilyCircle
+              </a>
+            </div>
+          </div>
+          <!-- Externatic -->
+          <div class="experience-card">
+            <div class="card-header">
+              <h3>Wild Code School - Externatic</h3>
+              <p>28/11/2022 - 01/02/2023</p>
+            </div>
+            <div class="card-body">
+              <!-- Description -->
+              <section class="desc">
+                <h4>Description du projet</h4>
+                <p>
+                  Externatic est une application web qui permet aux utilisateurs
+                  un emploie dans un domaine de leur choix de l'Informatique
+                </p>
+              </section>
+              <div class="card-main">
+                <!-- Rôles -->
+                <section class="roles">
+                  <h4>Rôles</h4>
+                  <ul class="roles-list">
+                    <li>Front-end</li>
+                    <li>Back-end</li>
+                    <li>Design</li>
+                  </ul>
+                </section>
+
+                <!-- Technologies -->
+                <section class="techno">
+                  <h4>Technologies utilisées</h4>
+                  <ul class="techno-list">
+                    <li>React.js</li>
+                    <li>Node.js/Express</li>
+                    <li>MySQL</li>
+                    <li>Agile SCRUM</li>
+                    <li>Figma</li>
+                  </ul>
+                </section>
+
+                <section class="acquis">
+                  <h4>Compétences acquises</h4>
+                  <ul class="acquis-list">
+                    <li>Méthodologie Agile SCRUM</li>
+                    <li>Travail en équipe</li>
+                    <li>Git workflow professionnel</li>
+                    <li>Intégration API externe</li>
+                    <li>Tests unitaires</li>
+                    <li>Clean code</li>
+                  </ul>
+                </section>
+              </div>
+            </div>
+            <div class="card-footer">
+              <a
+                href="https://github.com/WildCodeSchool/2022-09-RMT-JSCREW-Externatic"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fab fa-github"></i> Externatic
+              </a>
+            </div>
+          </div>
+
+          <!-- Dragon Team -->
+          <div class="experience-card">
+            <div class="card-header">
+              <h3>Wild Code School - Dragon Team</h3>
+              <p>28/09/2022 - 07/10/2022</p>
+            </div>
+            <div class="card-body">
+              <!-- Description -->
+              <section class="desc">
+                <h4>Description du projet</h4>
+                <p>
+                  Dragon team est une application web qui permet aux
+                  utilisateurs de jouer ensemble et de partager des moments de
+                  plaisir ensemble.
+                </p>
+              </section>
+              <div class="card-main">
+                <!-- Rôles -->
+                <section class="roles">
+                  <h4>Rôles</h4>
+                  <ul class="roles-list">
+                    <li>Front-end</li>
+                    <li>Design</li>
+                  </ul>
+                </section>
+
+                <!-- Technologies -->
+                <section class="techno">
+                  <h4>Technologies utilisées :</h4>
+                  <ul class="tech-list">
+                    <li>HTML5, CSS3 </li>
+                    <li>JavaScript</li>
+                  </ul>
+                </section>
+
+                <section class="acquis">
+                  <h4>Compétences acquises</h4>
+                  <ul class="acquis-list">
+                    <li>Animations CSS avancées</li>
+                    <li>Manipulation du DOM</li>
+                    <li>JavaScript vanilla</li>
+                    <li>Responsive design</li>
+                    <li>Versionning avec Git</li>
+                    <li>Maquettage Figma</li>
+                  </ul>
+                </section>
+              </div>
+            </div>
+            <div class="card-footer">
+              <a
+                href="https://github.com/WildCodeSchool/2022-09-JS-RMT-JSCREW-TEAM-C"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fab fa-github"></i>Dragon team
+              </a>
+              <a
+                href="https://dragon-team.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="img/icon/project/dragonTeam.svg"
+                  class="logo-dragon"
+                  alt="Logo Dragon Team"
+                />
+                <span class="span-dragon">site web</span>
+              </a>
             </div>
           </div>
         </div>
 
-
-
-            <!-- Expérience 1 -->
-            <div class="experience">
-              <div class="experience-card">
-                <h4><i class="fas fa-graduation-cap"></i> Wild Code School</h4>
-                <p>03/2023 - 11/2023</p>
-              </div>
-              <div class="content">
-                <div class="experience-content">
-                  <h3>Développeur Web Full Stack</h3>
-                  <p>Projet de fin d'études à la Wild Code School : je travaille actuellement sur le développement d'un
-                    site
-                    web full stack dédié à mon réseau social familial, utilisant les technologies telles que React.js,
-                    Node.js, Sequelize, et MySQL. Ce projet est en cours d'élaboration et continue d'évoluer.</p>
-                  <a href="https://github.com/petaccia" target="_blank"><i class="fab fa-github"></i>FamilyCircle</a>
-                  <br>
-                </div>
-              </div>
-            </div>
-
-            <!-- Expérience 2 -->
-            <div class="experience">
-              <div class="experience-card">
-                <h4><i class="fas fa-graduation-cap"></i> Wild Code School</h4>
-                <p>28/11/2022 - 01/02/2023</p>
-              </div>
-              <div class="content">
-                <div class="experience-content">
-                  <h3>Développeur Web Full Stack</h3>
-                  <p>Pendant une période de deux mois, j'ai collaboré au sein d'une équipe de cinq personnes pour la
-                    refonte
-                    du site web d'Externatic, dans le cadre d'un projet utilisant la méthodologie Agile. L'objectif
-                    principal était d'intégrer la plateforme de recrutement à la structure existante. Nous avons
-                    travaillé
-                    avec des technologies telles que React.js, Node.js, SQL pur et MySQL. À la conclusion du projet,
-                    nous
-                    avons présenté notre travail à Externatic au cours d'une visioconférence avec les clients, mettant
-                    en
-                    avant notre capacité à répondre à des situations réelles de développement web.</p>
-                  <a href="https://github.com/WildCodeSchool/2022-09-RMT-JSCREW-Externatic" target="_blank"><i
-                      class="fab fa-github"></i>Externatic</a>
-
-                  <br>
-                </div>
-              </div>
-            </div>
-
-            <!-- Expérience 3 -->
-            <div class="experience">
-              <div class="experience-card">
-                <h4><i class="fas fa-graduation-cap"></i> Wild Code School</h4>
-                <p>17/10/2022 - 23/11/2022</p>
-              </div>
-              <div class="content">
-                <div class="experience-content">
-                  <h3>Développeur Web Full Stack</h3>
-                  <p>Au sein de l'équipe de la Wild Code School, nous avons collaboré à la création d'un site e-commerce
-                    de
-                    cartes Pokémon de prestige en utilisant React.js, Node.js, et MySQL. Le projet, réalisé en méthode
-                    Agile, a impliqué cinq personnes et a renforcé notre expérience pratique en développement web.</p>
-                  <a href="https://github.com/WildCodeSchool/2022-09-JS-RMT-JSCREW-projet2-team2" target="_blank"><i
-                      class="fab fa-github"></i>Pokebiz</a>
-                </div>
-              </div>
-            </div>
-
-            <!-- Expérience 4 -->
-            <div class="experience">
-              <div class="experience-card">
-                <h4><i class="fas fa-graduation-cap"></i> Wild Code School</h4>
-                <p>28/09/2022 - 07/10/2022</p>
-              </div>
-              <div class="content">
-                <div class="experience-content">
-                  <h3>Développeur web</h3>
-                  <p>En collaboration avec une équipe de cinq personnes à la Wild Code School, nous avons développé un
-                    site
-                    web dédié aux fans de Dragon Ball Z. Le projet, réalisé en méthode Agile, a impliqué l'utilisation
-                    de
-                    HTML, CSS et JavaScript pour offrir une expérience immersive aux amateurs de la série.</p>
-                  <a href="https://github.com/WildCodeSchool/2022-09-JS-RMT-JSCREW-TEAM-C" target="_blank"><i
-                      class="fab fa-github"></i>Dragon team</a>
-                  <br>
-                  <a href="https://dragon-team.netlify.app/"><img src="img/icon/dragonTeam.svg" class="logo-dragon"
-                      alt="logo dragon team"><span class="span-dragon">site web</span></a>
-                </div>
-              </div>
-            </div>
-
-
-            <!-- Expérience 5 -->
-            <div class="experience">
-              <div class="experience-card">
-                <h4><i class="fa-solid fa-building-lock"></i> Gmsa</h4>
-                <p>02/11/1998 - 31/08/2022</p>
-              </div>
-              <div class="content">
-                <div class="experience-content">
-                  <h3>Serrurier Electricien</h3>
-                  <p>Dépannage et installation dans la serrurerie et l'électricité. Gestion des dossiers clients.</p>
-                </div>
-              </div>
-            </div>
+        <!-- GMSA -->
+        <div class="experience-card">
+          <div class="card-header">
+            <h3>GMSA</h3>
+            <p>11/1998 - 2021</p>
           </div>
-    </main>
+          <div class="card-body">
+            <!-- Description -->
+            <section class="desc">
+              <h4>Description du poste</h4>
+              <p>
+                Dépannage et installation dans la serrurerie et l'électricité.
+                Gestion des dossiers clients.
+              </p>
+            </section>
+            <section class="acquis">
+              <h4>Compétences acquises</h4>
+              <ul class="acquis-list">
+                <li>Gestion de projet</li>
+                <li>Service client</li>
+                <li>Résolution de problèmes</li>
+                <li>Organisation</li>
+                <li>Travail en autonomie</li>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </main>
+    </div>
 
-  </div>
-</body>
-
+      <!-- Pied de page -->
+      <footer class="footer">
+        <p>&copy; 2024 - Mise à jour par Seb Petaccia</p>
+      </footer>
+  </body>
 </html>

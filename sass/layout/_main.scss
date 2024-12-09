@@ -1,0 +1,115 @@
+@use "../layout/mediaQueries" as *;
+@use "../abstracts/variables" as *;
+
+main {
+  grid-area: main;
+  padding: $spacing-xl;
+  margin-top : $spacing-xl;
+  width: 100%;
+  text-align: justify;
+  z-index: 1;
+
+  .experience-title {
+    font-size: $font-size-lg;
+    margin: $spacing-10xl;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.5rem;
+    font-weight: bold;
+    color: $dark-color;
+  }
+
+  .experience-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: $spacing-7xl;
+  }
+
+  .experience-card {
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-bottom: $spacing-9xl;
+    .card-header {
+      background-color: $primary-color;
+      color: $background-color;
+      padding: $spacing-md;
+
+      h3 {
+        font-size: $font-size-md;
+        margin-bottom: $spacing-sm;
+      }
+
+      p {
+        font-size: $font-size-sm;
+      }
+    }
+
+    .card-body {
+      padding: $spacing-md;
+
+      .desc {
+        margin-bottom: $spacing-md;
+        h4 {
+          color: $dark-color;
+          font-size: $font-size-sm;
+          margin-bottom: $spacing-sm;
+        }
+
+        p {
+          line-height: 1.5;
+          letter-spacing: 1px;
+          font-size: $font-size-xs;
+          margin-bottom: $spacing-sm;
+        }
+      }
+      .card-main {
+        width: 100%;
+        display: flex;        
+        margin-bottom: $spacing-md;
+      }
+
+      ul {
+        width: 250px;
+        padding-left: $spacing-md;
+        gap: $spacing-sm;
+
+        li {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-bottom: $spacing-sm;
+          font-size: $font-size-xs;
+          line-height: 1.5;
+        }
+      }
+    }
+
+    .card-footer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: $spacing-md;
+      border-top: 1px solid $border-color;
+
+      a {
+        color: $primary-color;
+        text-decoration: none;
+        font-size: $font-size-sm;
+        margin-right: $spacing-md;
+
+        i,
+        img {
+          width: $spacing-xs;
+          margin-right: $spacing-xs;
+        }
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+

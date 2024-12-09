@@ -6,7 +6,7 @@ $colors: rgb(255, 91, 91), rgb(13, 240, 13), rgb(17, 168, 250), rgb(155, 155, 2)
 
 @keyframes changeColor {
   @for $i from 1 through length($colors) {
-    #{percentage($i * math.div(1, length($colors)))} {
+    #{percentage(($i - 1) * math.div(1, length($colors)))} {
       color: nth($colors, $i);
     }
   }

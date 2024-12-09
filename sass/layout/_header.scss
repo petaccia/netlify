@@ -1,0 +1,103 @@
+@use '../abstracts/variables' as *;
+@use '../layout/mediaQueries' as *;
+@use '../components/animations';
+
+header {
+  grid-area: header;
+  background: linear-gradient(to right, $primary-color, $light-color);
+  padding: $spacing-xl $spacing-lg;
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    font-size: 6rem;
+    line-height: 8rem;
+    font-weight: 300;
+    letter-spacing: 3rem;
+    animation: changeColor 5s linear infinite;
+
+    @include xl {
+      font-size: 5rem;
+      line-height: 8rem;
+      font-weight: 300;
+      letter-spacing: 3rem;
+    }
+
+    @include lg {
+      font-size: 5rem;
+      line-height: 8rem;
+      font-weight: 300;
+      letter-spacing: 3rem;
+    }
+
+    @include md {
+      font-size: 5rem;
+      line-height: 8rem;
+      font-weight: 300;
+      letter-spacing: 3rem;
+    }
+
+    @include sm {
+      font-size: 4rem;
+      line-height: 4rem;
+      font-weight: bold;
+      letter-spacing: 1rem;
+    }
+
+    @include xs {
+      font-size: 2rem;
+      line-height: 4rem;
+      font-weight: bold;
+      letter-spacing: 1rem;
+    }
+  }
+
+  .job-title {
+    letter-spacing: 0.5rem;
+    line-height: 3rem;
+    font-size: $font-size-md;
+
+    @include xl {
+      font-size: $font-size-lg;
+      font-weight: 700;
+      padding-top: $spacing-lg;
+      letter-spacing: 0.2rem;
+      line-height: 1rem;
+    }
+
+    @include lg {
+      font-size: $font-size-lg;
+      font-weight: 700;
+      padding-top: $spacing-lg;
+      letter-spacing: 0.2rem;
+      line-height: 1rem;
+    }
+
+    @include md {
+      font-size: $font-size-lg;
+      font-weight: 700;
+      padding-top: $spacing-md;
+      letter-spacing: 0.2rem;
+      line-height: 1rem;
+    }
+
+    @include sm {
+      font-size: $font-size-lg;
+      font-weight: 700;
+      padding-top: $spacing-md;
+      letter-spacing: 0.2rem;
+      line-height: 1rem;
+    }
+
+    @include xs {
+      font-size: $font-size-xs;
+      font-weight: 700;
+      letter-spacing: 0.2rem;
+      line-height: 2rem;
+    }
+  }
+}

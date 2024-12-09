@@ -1,0 +1,40 @@
+@use "../abstracts/variables" as *;
+
+// Style de base des boutons
+.btn {
+    width: 100px;
+    height: 30px;
+    margin-left: 2rem;
+    border-radius: 0.5rem;
+    background-color: $light-color;
+    color: $background-color;
+    box-shadow: 0 0 5px $light-color;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s ease;
+  
+    &:hover {
+      background-color: $background-color;
+      color: $light-color;
+      transform: translateY(-2px);
+    }
+  
+    &:active {
+      transform: translateY(0);
+    }
+  }
+  
+  // Boutons des certifications
+  .experience-item {
+    .btn {
+      width: 100px;
+      height: 30px;
+      margin-left: 2rem;
+      border-radius: 0.5rem;
+      background-color: $light-color;
+      color: $background-color;
+      box-shadow: 0 0 5px $light-color;
+      cursor: pointer;
+    }
+  }
+  

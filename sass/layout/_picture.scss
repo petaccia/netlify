@@ -1,0 +1,46 @@
+@use "../abstracts/variables" as *;
+@use "../layout/mediaQueries" as *;
+.picture {
+    grid-area: picture;
+    background: $background-color;
+    border-right: 1px solid $border-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: $spacing-xl;
+  
+    img {
+      width: 300px;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 2px solid $border-color;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
+  
+      &:hover {
+        transform: scale(1.05);
+      }
+  
+      @include lg {
+        width: 250px;
+        height: 250px;
+      }
+  
+      @include md {
+        width: 200px;
+        height: 200px;
+      }
+  
+      @include sm {
+        width: 150px;
+        height: 150px;
+      }
+  
+      @include xs {
+        width: 120px;
+        height: 120px;
+      }
+    }
+  }
+  

@@ -1,0 +1,216 @@
+@use '../abstracts/variables' as *;
+@use '../layout/mediaQueries' as *;
+.aside {
+  grid-area: aside;
+  background: $background-color;
+  border-right: 1px solid $border-color;
+  padding-top: $spacing-10xl;
+  
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    margin: $spacing-md 1rem;
+    background: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 1.5rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    // Style des titres
+    h2, h3, h4 {
+      position: relative;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1rem;
+      color: $dark-color;
+      
+    }
+
+    // Style des listes
+    .logo-list {
+      li {
+        padding: 0.5rem 0;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        
+        &:last-child {
+          border-bottom: none;
+        }
+
+        i, img {
+          transition: transform 0.2s ease;
+          
+          &:hover {
+            transform: scale(1.1);
+          }
+        }
+      }
+    }
+
+    // Style spécifique pour la section contact
+    .contact-title {
+      text-align: center;
+      margin-bottom: 1rem;
+      color: $dark-color;
+      padding: 0.5rem;
+      font-size: $font-size-md;
+    }
+    .contact {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      h3 {
+        display: flex;
+        justify-content: space-between;
+        font-size: $font-size-sm;
+        margin-bottom: 1rem;
+        color: $light-color;
+        padding: 0.5rem;
+        border-radius: 4px;
+        
+        &:hover {
+          background: rgba(0, 0, 0, 0.02);
+        }
+
+        a {
+          color: $text-color;
+          transition: color 0.2s ease;
+          
+          &:hover {
+            color: $primary-color;
+          }
+        }
+        i {
+          font-size: $font-size-sm;
+          margin-right: $spacing-lg;
+        }
+        .address {
+          font-size: $font-size-sm;
+        }
+      }
+    }
+  }  .competence {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    
+      .logo-title {
+        font-size: $font-size-md;
+        text-align: center;
+        margin-bottom: $spacing-sm;
+        color: $dark-color;
+      }
+
+      .logo-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+
+        .logo-front,
+        .logo-back,
+        .soft,
+        .skills {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          font-size: $font-size-sm;
+          text-align: center;
+          margin: $spacing-xs;
+
+          i, img {
+            width: 20px;
+            height: 20px;
+            object-fit: contain;
+            filter: grayscale(20%);
+            transition: all 0.3s ease;
+
+            &:hover {
+              filter: grayscale(0%);
+              transform: scale(1.1);
+            }
+          }
+        }
+
+        .logo-front {
+          img[alt="Logo Lunacy"] {
+            width: 18px;
+            height: 18px;
+            vertical-align: middle;
+            margin-left: 8px;
+          }
+        }
+
+        .logo-lang {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          font-size: $font-size-sm;
+          text-align: center;
+          margin: $spacing-xs;
+        }
+      }
+    }
+  }
+
+  .bottom-section {
+    flex: 0 0 auto;
+    margin-top: 2rem;
+  }
+
+  .social {
+    flex: 0 0 auto;
+    margin-top: auto;
+    padding: 2rem 0;
+
+   
+
+    .social-link {
+      width: 100%;
+      font-size: $font-size-sm;
+      margin-bottom: $spacing-sm;
+
+      .i-social {
+        font-size: $font-size-sm;
+        margin-right: $spacing-lg;
+      }
+
+      .a-social {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+        text-decoration: none;
+        color: $text-color;
+
+        &:hover {
+          color: $dark-color;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+
+  
+    h4 {
+      font-size: $font-size-xs;
+      text-align: center;
+      text-decoration: underline;
+    }
+
+    ul {
+      font-size: $font-size-xs;
+
+      li {
+        font-size: $font-size-xs;
+        margin-bottom: $spacing-sm;
+        margin-right: $spacing-xs;
+      }
+    }
+  

@@ -1,0 +1,27 @@
+@use "../abstracts/variables" as *;
+
+// Configuration de base HTML
+html {
+  font-size: 62.5%;
+}
+
+// Style de base du body
+body {
+  font-family: var(--font-family);
+  color: var(--text);
+  font-size: 1.6rem;
+  overflow-x: hidden;
+}
+
+// Styles de base des titres
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: $spacing-md;
+  font-weight: normal;
+  line-height: 1.2;
+}
+
+// Style de base des paragraphes
+p {
+  margin-bottom: $spacing-sm;
+  line-height: 1.6;
+}

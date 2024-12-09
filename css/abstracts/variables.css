@@ -1,12 +1,10 @@
 :root {
   --font-family: "Muli", sans-serif;
-  --light: #038063;
-  --secondary: #f1c40f;
   --primary: #034a62;
+  --light: #038063;
   --dark: #0630da;
   --text: #333;
   --background: #fafafa;
-  --hint: #999;
   --border: #ddd;
 }
 
